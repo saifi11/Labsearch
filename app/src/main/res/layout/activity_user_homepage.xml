@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserHomepage"
+    android:id="@+id/drawerlayout"
+    android:fitsSystemWindows="true"
+
+    tools:openDrawer="left">
+    //for navigation
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationview"
+        app:headerLayout="@layout/headerfile"
+        app:menu="@menu/sidemenu"
+        android:layout_gravity="start"
+        >
+    </com.google.android.material.navigation.NavigationView>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF3700B3"
+                android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+                app:title="LAB SEARCH"
+                app:titleMarginStart="10dp"
+                app:titleTextColor="#FFFFFF"
+                tools:ignore="MissingConstraints" />
+
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/slider_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                app:layout_constraintVertical_bias="0.103"
+                app:sliderAnimationDuration="500"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderScrollTimeInSec="3"
+                app:sliderStartAutoCycle="true"
+                tools:ignore="MissingConstraints" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="310dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/centrelist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="69dp"
+                android:text="Hi!"
+                android:textColor="#EA0E0E"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/slider_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.067"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/toolbar"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <TextView
+                android:id="@+id/username_home_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="68dp"
+                android:fontFamily="@font/delius_swash_caps"
+                android:text="Username"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toTopOf="@+id/slider_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintStart_toEndOf="@+id/textView6"
+                app:layout_constraintTop_toTopOf="@+id/toolbar"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".centreloginpage">
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/centerlogo"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:text="Login"
+        android:layout_marginTop="-30dp"
+        android:textColor="#240075"
+        android:textStyle="bold"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        //centreusername
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/centre_regno"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Centre Register_Number">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_business_center_24"
+                android:drawablePadding="10dp"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        //centrepassword
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/centre_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/purple_500">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:onClick="fogetpassword1"
+        android:id="@+id/centreforgetpasswordpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="-5dp"
+        android:text="Forgot Password?"
+        android:textColor="#3F51B5"
+        android:textSize="15dp" />
+
+    <Button
+        android:onClick="centrebtnloginbtn"
+        android:id="@+id/login"
+        style="@style/ShapeAppearance.MaterialComponents.LargeComponent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="22dp"
+        android:elevation="5dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/centreregisterpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="22dp"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="registerpage1"
+        android:text="Have Account ? Register Now."
+        android:textColor="#3F51B5" />
+
+</LinearLayout>

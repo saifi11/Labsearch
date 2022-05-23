@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="375dp"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    >
+    <TextView
+        android:id="@+id/test_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test name "
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        />
+
+    <TextView
+        android:id="@+id/test_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="31dp"
+        android:fontFamily="sans-serif-light"
+        android:text="TestPrice "
+        android:textColor="#9C27B0"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹/-"
+        android:layout_marginTop="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginLeft="325dp"/>
+
+
+
+</androidx.cardview.widget.CardView>

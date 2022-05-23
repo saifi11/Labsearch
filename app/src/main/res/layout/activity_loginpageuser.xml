@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_userlogindesiign"
+
+    tools:context=".loginpageuser">
+
+<!--    <ImageView-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:src="@drawable/logo" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp"
+        android:fontFamily="@font/cantora_one"
+        android:text="Login"
+        android:textColor="#240075"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        //username
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        //password
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/purple_500">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:onClick="fogetpassword"
+        android:id="@+id/forgetpasswordpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:textAlignment="textEnd"
+        android:layout_marginTop="-5dp"
+        android:text="Forgot Password?"
+        android:textColor="#3F51B5"
+        android:textSize="15dp" />
+
+    <Button
+        android:onClick="loginbtn"
+        android:id="@+id/login"
+        style="@style/ShapeAppearance.MaterialComponents.LargeComponent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="22dp"
+        android:elevation="5dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/registerpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="22dp"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="registerpage"
+        android:text="Have Account ? Register Now."
+        android:textColor="#3F51B5" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="50dp"
+        android:elevation="5dp"
+        android:fontFamily="sans-serif-light"
+        android:onClick="centrebtn"
+        android:text="Diagnostic Centre" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register Your Diagnostic Centre"
+        android:fontFamily="cursive"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

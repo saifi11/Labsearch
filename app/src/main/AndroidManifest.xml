@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pathalogyapp">
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PATHALOGYAPP">
+        <activity
+            android:name=".SMS"
+            android:exported="false" />
+        <activity
+            android:name=".aftermain"
+            android:exported="false" />
+        <activity
+            android:name=".sendmail"
+            android:exported="false" />
+        <activity
+            android:name=".myappointment"
+            android:exported="false" />
+        <activity
+            android:name=".usercancel"
+            android:exported="false" />
+        <activity
+            android:name=".complainttocentre"
+            android:exported="false" />
+        <activity
+            android:name=".centreOtpVerifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".centreOtpSendActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OtpVerifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OtpSendActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mritestbooking"
+            android:exported="false" />
+        <activity
+            android:name=".user_mri"
+            android:exported="false" />
+        <activity
+            android:name=".Userbooked"
+            android:exported="false" />
+        <activity
+            android:name=".Prescriptionupload"
+            android:exported="false" />
+        <activity
+            android:name=".paymentdone"
+            android:exported="false" />
+        <activity
+            android:name=".patientdetail"
+            android:exported="false" />
+        <activity
+            android:name=".bloodtestbooking"
+            android:exported="true" />
+        <activity
+            android:name=".user_blood"
+            android:exported="false" />
+        <activity
+            android:name=".useronclickuserlist"
+            android:exported="false" />
+        <activity
+            android:name=".centrepasswdupdatemessage"
+            android:exported="false" />
+        <activity
+            android:name=".centreforgetpassword"
+            android:exported="false" />
+        <activity
+            android:name=".userpasswdupdatemessage"
+            android:exported="false" />
+        <activity
+            android:name=".userforgetpassword"
+            android:exported="false" />
+        <activity
+            android:name=".xray"
+            android:exported="false" />
+        <activity
+            android:name=".MRI"
+            android:exported="false" />
+        <activity
+            android:name=".blood"
+            android:exported="false" />
+        <activity
+            android:name=".centrehomepage"
+            android:exported="false" />
+        <activity
+            android:name=".uploadimage"
+            android:exported="false" />
+        <activity
+            android:name=".centresignup"
+            android:exported="false" />
+        <activity
+            android:name=".UserHomepage"
+            android:exported="false" />
+        <activity
+            android:name=".centreloginpage"
+            android:exported="false" />
+        <activity
+            android:name=".signpageuser"
+            android:exported="false" />
+        <activity
+            android:name=".loginpageuser"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

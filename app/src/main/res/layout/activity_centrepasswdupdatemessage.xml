@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".centrepasswdupdatemessage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/cantarell_bold"
+            android:gravity="center"
+            android:text="Password Updated"
+            android:textAllCaps="true"
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_check_circle_24"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/antic_slab"
+            android:gravity="center"
+            android:text="Your Password has been updated!"
+            android:textColor="#686565"
+            android:textSize="15dp" />
+
+        <Button
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-light"
+            android:onClick="logintbn2"
+            android:text="LOGIN" />
+
+
+    </LinearLayout>
+</LinearLayout>

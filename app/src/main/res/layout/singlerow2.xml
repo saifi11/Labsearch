@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:elevation="30dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patient Name :"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:textAllCaps="true"
+        android:id="@+id/Patient_Name_card"
+        android:layout_marginLeft="160dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patient Name"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Patient Phone:"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="43dp"/>
+    <TextView
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Patient Phone"
+        android:id="@+id/Patient_Phone_card"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="43dp"
+        android:layout_marginLeft="160dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Patient Age:"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="66dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Patient Age"
+        android:id="@+id/Patient_Age_card"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="66dp"
+        android:layout_marginLeft="160dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Refer Doctor:"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="88dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="refer doc"
+        android:id="@+id/refer_doc_card"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="88dp"
+        android:layout_marginLeft="160dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Test name :"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="108dp"/>
+    <TextView
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="testname"
+        android:id="@+id/testname_card"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="108dp"
+        android:layout_marginLeft="160dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Test price :"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="128dp"/>
+    <TextView
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="testname"
+        android:id="@+id/testprice_card"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="128dp"
+        android:layout_marginLeft="160dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Appointment Date :"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"/>
+    <TextView
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="testdate"
+        android:id="@+id/testdate_card"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="160dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Gender :"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="170dp"/>
+    <TextView
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="gender"
+        android:id="@+id/gender_card"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="140dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Address :"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="190dp"/>
+    <TextView
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Address"
+        android:id="@+id/Address_card"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="100dp"/>
+
+</androidx.cardview.widget.CardView>

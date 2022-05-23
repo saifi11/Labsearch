@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bloodtestbooking">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/blood"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="210dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true"
+            android:elevation="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Test Name :"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Test Price :"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="20dp"/>
+
+
+            <TextView
+                android:textAllCaps="true"
+                android:id="@+id/testname_blood"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:fontFamily="monospace"
+                android:text="Test Name "
+                android:textAlignment="center"
+                android:textColor="#E91E63"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Price"
+                android:textStyle="bold"
+                android:id="@+id/bloodtest_price"
+                android:fontFamily="monospace"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="95dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="₹/-"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="95dp"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/makepayment"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="20dp"
+            android:text="Make Payment"
+            android:fontFamily="monospace"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_height="wrap_content"
+    tools:context=".sendmail"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/mail"
+        android:layout_marginTop="20dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        tools:ignore="MissingConstraints">
+        <EditText
+            android:drawableLeft="@drawable/ic_baseline_contact_mail_24"
+            android:id="@+id/Emailid_mail"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="  Enter the Email ID"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/Entresub_mail"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="  Enter the Subject"
+            android:inputType="text"
+            android:drawableLeft="@drawable/ic_baseline_subject_24"
+            />
+
+        <EditText
+            android:id="@+id/message_mail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:hint="  Enter the Message"
+            android:inputType="text"
+           android:drawableLeft="@drawable/ic_baseline_message_24"
+            />
+        <Button
+            android:onClick="processmail"
+            android:id="@+id/sendmail_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Email"
+            android:elevation="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+
+            />
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

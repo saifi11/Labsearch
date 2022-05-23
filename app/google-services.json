@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "975141047565",
+    "project_id": "pathalogyapp",
+    "storage_bucket": "pathalogyapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975141047565:android:5ed516b33065dc8116b444",
+        "android_client_info": {
+          "package_name": "com.example.pathalogyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975141047565-l9qgel4c4tgoump7f83qnk1h0trqd97r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAezQbIfcM5hfsDCZ81f0_SaGSe3PPiRlw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "975141047565-l9qgel4c4tgoump7f83qnk1h0trqd97r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
